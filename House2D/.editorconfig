@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none
+
+# CS0649: Field 'Siren._decreaseVolumeCoroutine' is never assigned to, and will always have its default value null
+dotnet_diagnostic.CS0649.severity = none

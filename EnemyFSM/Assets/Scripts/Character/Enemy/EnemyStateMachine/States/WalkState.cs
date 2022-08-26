@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WalkState : State
+{
+    [SerializeField] private float _speed;
+
+    private void Update()
+    {
+        if (Target != null)
+            transform.position = Vector2.MoveTowards(transform.position, Target.GetPosition(), _speed * Time.deltaTime);
+
+    }
+}
